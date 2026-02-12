@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import Counter from './components/Counter'
+import './styles/global.css'
+import Counter from './components/counter/Counter'
+import Sidebar from './components/sidebar/Sidebar'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-        <Counter />
-    </>
+    <Sidebar />
+  <Counter/>
+      </>
   )
 }
 
